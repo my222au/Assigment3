@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add_integer_menu"
+          android:title="Navigate"
+          android:icon="@drawable/ic_list_white_48dp"
+          android:orderInCategory="100"
+          apps:showAsAction="ifRoom|withText">
+        <menu>
+            <item android:id="@+id/toStockholm" android:title="Vaxjo To Stocholm"/>
+            <item android:id="@+id/toCopenHagen" android:title="Vaxjo to  Chopenhagen" />
+            <item android:id="@+id/toOddesa" android:title="Vaxjo to Oddesa" />
+            >
+        </menu>
+    </item>
+
+</menu>

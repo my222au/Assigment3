@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="180dp"
+              android:orientation="horizontal"
+              android:elevation="4dp"
+              android:background="@drawable/layer_list_layout"
+   >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= ""
+            android:textSize="80sp"
+            android:textColor="#2A3D40"
+            android:id="@+id/temperatureLabel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#21CE99"
+            android:paddingLeft="10dp"
+            android:id="@+id/summaryLabel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:id="@+id/location"
+            android:textColor="#9a9696"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="65sp"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:textColor="#21CE99"
+            android:id="@+id/weatherIcon"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/bg_rainlayout"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/single_drop"
+                android:paddingTop="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffffff"
+
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp"
+                android:textSize="12sp"
+                android:id="@+id/rainLabel"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="45sp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/dayNumberLabel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:id="@+id/dayLabel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#a1302d2d"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:id="@+id/timeLable"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="project.my222au.assignment3"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <activity android:name="project.my222au.assignment3.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER">x</category>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="project.my222au.assignment3.callCollector.CallCollector">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="project.my222au.assignment3.callCollector.IncomingCallRecevier">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <!--THE ROAD MAP  MANIFEST -->
+
+        <activity android:name="project.my222au.assignment3.theRoadMap.TheRoadmap">
+
+
+        </activity>
+
+        <!-- WIDGET MANIFEST-->
+        <activity
+            android:name="project.my222au.assignment3.WeatherWidget.WeatherConfigActivity" android:label="config">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="project.my222au.assignment3.WeatherWidget.WeatherService"
+            android:enabled="true"/>
+
+        <receiver
+            android:name="project.my222au.assignment3.WeatherWidget.Widget"
+            android:label="!wmi">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_provider_info"/>
+        </receiver>
+
+        <activity android:name="project.my222au.assignment3.WeatherWidget.Weather">
+
+        </activity>
+
+
+
+
+        <!--City map -->
+
+        <activity
+            android:name="project.my222au.assignment3.cityMap.MapsActivity"
+            android:label="@string/title_activity_maps">
+
+        </activity>
+
+
+        <!--
+            The API key for Google Maps-based APIs is defined as a string resource.
+            (See the file "res/values/google_maps_api.xml").
+            Note that the API key is linked to the encryption key used to sign the APK.
+            You need a different API key for each encryption key, including the release key that is used to
+            sign the APK for publishing.
+            You can define the keys for the debug and release targets in src/debug/ and src/release/.
+       -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+
+
+
+    </application>
+
+</manifest>

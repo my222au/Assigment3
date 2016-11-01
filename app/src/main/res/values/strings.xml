@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+    <string name="settings">Settings</string>
+        <string name="summary_sunny">CLEAR</string>
+        <string name="summary_partly_cloudy">PARTLY CLOUDY</string>
+        <string name="summary_cloudy">CLOUDY</string>
+        <string name="summary_rainy">RAINY</string>
+        <string name="summary_snow">SNOW</string>
+        <string name="date_today">TODAY</string>
+        <string name="network_unavailable_message">Network is unavailable</string>
+        <string name="vaxjo">Växjö</string>
+        <string name="kronoberg">kronoberg</string>
+        <string name="sverige">Sverige</string>
+        <string name="stockholm">Stockholm</string>
+        <string name="norrbotten">Norrbotten</string>
+        <string name="kiruna">kiruna</string>
+    <string name="title_activity_maps">City map</string>
+    <string name="options">Options</string>
+    <string name="Call">Call number</string>
+    <string name="send_sms">Send Text Message</string>
+    <string name="chooser_title">Choose app to send with</string>
+    <string name="subject">Hello</string>
+
+
+</resources>

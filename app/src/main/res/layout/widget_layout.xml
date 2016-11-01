@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="380dp"
+              android:layout_height="200dp"
+              android:orientation="horizontal"
+              android:layout_gravity="center"
+              android:elevation="4dp"
+                android:id="@+id/widget"
+
+              android:background="@drawable/layer_list_layout"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "--"
+            android:textSize="80sp"
+            android:textColor="#2A3D40"
+            android:id="@+id/temperatureLabel1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#21CE99"
+            android:paddingStart="10dp"
+            android:id="@+id/summaryLabel"/>
+
+        <TextView
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/linearLayout2"
+            android:id="@+id/cityLabel"
+            android:paddingStart="8dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:layout_weight="1"
+        android:id="@+id/linearLayout4">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/bg_rainlayout"
+            android:layout_gravity="center_horizontal"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/single_drop"
+                android:paddingTop="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="#ffffffff"
+
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp"
+                android:textSize="12sp"
+                android:id="@+id/rainLabel"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="45sp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/dayNumberLabel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:id="@+id/dayLabel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#a1302d2d"
+            android:paddingTop="10dp"
+            android:id="@+id/timeLable"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        />
+
+    <ImageView
+        android:layout_width="@android:dimen/notification_large_icon_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/uppdatebutton"
+        android:src="@drawable/ic_update_white_36dp"
+        android:tint="#21CE99"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"/>
+
+
+</RelativeLayout>
