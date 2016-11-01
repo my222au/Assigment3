@@ -1,2 +1,3 @@
 # Assigment3
-This repo is for the coruse 2dv606 Assigment 3 
+This repo is for the course 2dv606 Assigment 3 
+
